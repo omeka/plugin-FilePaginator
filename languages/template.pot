@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"MIME-Version: 1.0\n"
+"POT-Creation-Date: 2024-03-07 09:29+0200\n"
+"Project-Id-Version: FilePaginator\n"
+"X-Domain: FilePaginator\n"
+"X-Generator: LanguagesManager\n"
+
+#: plugins/FilePaginator/FilePaginatorPlugin.php:49
+msgid "Prev"
+msgstr ""
+
+#: plugins/FilePaginator/FilePaginatorPlugin.php:49
+msgid "Next"
+msgstr ""
+
+#: plugins/FilePaginator/config_form.php:6
+msgid "Theme"
+msgstr ""
+
+#: plugins/FilePaginator/config_form.php:9
+msgid "Light"
+msgstr ""
+
+#: plugins/FilePaginator/config_form.php:9
+msgid "Dark"
+msgstr ""
+
+#: plugins/FilePaginator/config_form.php:9
+msgid "Compact"
+msgstr ""
+
+#: plugins/FilePaginator/config_form.php:12
+msgid "Links"
+msgstr ""
+
+#: plugins/FilePaginator/config_form.php:16
+msgid "Check the box below to launch files into new tabs on click."
+msgstr ""
+
+#: plugins/FilePaginator/config_form.php:20
+msgid "Metadata"
+msgstr ""
+
+#: plugins/FilePaginator/config_form.php:24
+msgid "Check the box below to show file metadata."
+msgstr ""

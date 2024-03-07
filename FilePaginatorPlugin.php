@@ -13,6 +13,7 @@
 class FilePaginatorPlugin extends Omeka_Plugin_AbstractPlugin
 {
     protected $_hooks = array(
+        'initialize',
         'public_head',
         'config', 
         'config_form',
@@ -23,6 +24,16 @@ class FilePaginatorPlugin extends Omeka_Plugin_AbstractPlugin
         'file_markup',
         'file_markup_options'
     );
+
+    /**
+     * Add the translations.
+     */
+    public function hookInitialize()
+    {
+
+        add_translation_source(dirname(__FILE__).'/languages');
+
+    }
 
     public function hookPublicHead($args)
     {   
@@ -46,7 +57,7 @@ class FilePaginatorPlugin extends Omeka_Plugin_AbstractPlugin
 
     public function filterFilesForItem($html) {
         $theme = get_option('file_paginator_theme');
-        return '<div id="file-pagination" data-theme="' . $theme . '"></div>'.$html;
+        return '<div id="file-pagination" data-theme="' . $theme . '" data-prevtext="'. __('Prev') .'" data-nexttext="'. __('Next') .'"></div>'.$html;
     }
 
     public function filterFileMarkupOptions ($options) {

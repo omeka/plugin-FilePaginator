@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"MIME-Version: 1.0\n"
+"POT-Creation-Date: 2024-03-07 09:29+0200\n"
+"Project-Id-Version: FilePaginator\n"
+"X-Domain: FilePaginator\n"
+"X-Generator: Poedit 2.2\n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Language: uk_UA\n"
+
+#: plugins/FilePaginator/FilePaginatorPlugin.php:49
+msgid "Prev"
+msgstr "Попередній"
+
+#: plugins/FilePaginator/FilePaginatorPlugin.php:49
+msgid "Next"
+msgstr "Наступний"
+
+#: plugins/FilePaginator/config_form.php:6
+msgid "Theme"
+msgstr "Тема"
+
+#: plugins/FilePaginator/config_form.php:9
+msgid "Light"
+msgstr "Світла"
+
+#: plugins/FilePaginator/config_form.php:9
+msgid "Dark"
+msgstr "Темна"
+
+#: plugins/FilePaginator/config_form.php:9
+msgid "Compact"
+msgstr "Компактний"
+
+#: plugins/FilePaginator/config_form.php:12
+msgid "Links"
+msgstr "Посилання"
+
+#: plugins/FilePaginator/config_form.php:16
+msgid "Check the box below to launch files into new tabs on click."
+msgstr "Поставте прапорець нижче, щоб відкривати файли в нових вкладках після натискання."
+
+#: plugins/FilePaginator/config_form.php:20
+msgid "Metadata"
+msgstr "Метадані"
+
+#: plugins/FilePaginator/config_form.php:24
+msgid "Check the box below to show file metadata."
+msgstr "Поставте прапорець нижче, щоб відобразити метадані файлу."
