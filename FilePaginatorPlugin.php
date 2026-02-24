@@ -14,6 +14,7 @@ class FilePaginatorPlugin extends Omeka_Plugin_AbstractPlugin
 {
     protected $_hooks = array(
         'public_head',
+        'public_footer',
         'config', 
         'config_form',
         );
@@ -24,12 +25,23 @@ class FilePaginatorPlugin extends Omeka_Plugin_AbstractPlugin
         'file_markup_options'
     );
 
+    public function hookInitialize()
+    {
+        get_view()->addHelperPath(dirname(__FILE__) . '/views/helpers', 'FilePaginator_View_Helper_FileShowPagination');
+    }
+
     public function hookPublicHead($args)
     {   
         queue_js_file('jquery.simplePagination');
         queue_js_file('filePagination');
         queue_css_file('simplePagination');
-        
+        queue_css_file('filePaginator');
+    }
+
+    public function hookPublicFooter($args)
+    {
+        $view = $args['view'];
+        echo $view->partial('common/file-show-pagination.php');
     }
 
     public function hookConfigForm($args) {
@@ -49,7 +61,7 @@ class FilePaginatorPlugin extends Omeka_Plugin_AbstractPlugin
         return '<div id="file-pagination" data-theme="' . $theme . '"></div>'.$html;
     }
 
-    public function filterFileMarkupOptions ($options) {
+    public function filterFileMarkupOptions($options) {
         if (get_option('file_paginator_links') == 1) {
             $options['linkAttributes']['target'] = '_blank';
         }
