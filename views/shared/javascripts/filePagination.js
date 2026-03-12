@@ -37,8 +37,8 @@ jQuery(function($) {
 
     var moveFileShowPagination = function() {
         var fileShowPagination = $('#file-show-pagination');
-        var content = $('#content');
-        fileShowPagination.appendTo(content);
+        var metadata = $('#sidebar');
+        fileShowPagination.appendTo(metadata);
     }
 
     if ($('body').hasClass('items show')) {
