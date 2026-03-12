@@ -16,7 +16,7 @@ class FilePaginator_View_Helper_FileShowPagination extends Zend_View_Helper_Abst
             $itemFiles = $originalItem->getFiles();
 
             if (count($itemFiles) > 1) {
-                $html .= '<nav id="file-show-pagination" class="item-pagination" aria-label="' . __('File navigation') . '"><ul class="navigation">';
+                $html .= '<nav id="file-show-pagination" aria-label="' . __('File navigation') . '"><ul class="item-pagination navigation">';
                 $originalItemOrder = metadata($file, 'order');
                 $currentFile = null;
                 $previousFile = null;
@@ -32,10 +32,10 @@ class FilePaginator_View_Helper_FileShowPagination extends Zend_View_Helper_Abst
                     }
                 }
                 if ($previousFile) {
-                    $html .= '<li class="previous">' . link_to($previousFile, 'show', __('Previous')) . '</li>';
+                    $html .= '<li id="previous-item" class="previous">' . link_to($previousFile, 'show', __('Previous')) . '</li>';
                 }
                 if ($nextFile) {
-                    $html .= '<li class="next">' . link_to($nextFile, 'show', __('Next')) . '</li>';
+                    $html .= '<li id="next-item" class="next">' . link_to($nextFile, 'show', __('Next')) . '</li>';
                 }
                 $html .= '</ul></nav>';
             }
