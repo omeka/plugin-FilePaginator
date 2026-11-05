@@ -6,6 +6,7 @@ jQuery(function($) {
         var items = $(".single-file");
 
         var numItems = items.length;
+        if (numItems < 2) return;
         var perPage = 1;
         var theme = pagination.data("theme");
 
